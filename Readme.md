@@ -34,7 +34,7 @@ $ make
 $ make run
 ```
 
-###Rodando
+***Rodando***
 
 ```
 $ cd Lista de Tarefa
