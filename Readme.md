@@ -6,7 +6,7 @@
 
 ## Por quê?
 
-Este projeto faz parte de um conjunto de projetos para o meu aprendizado.
+Este projeto faz parte de um conjunto de projetos/desafios para aprender programação.
 
 ## Começando
 
