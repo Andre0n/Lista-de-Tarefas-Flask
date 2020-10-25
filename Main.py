@@ -38,9 +38,12 @@ def cadastraTarefa():
 
 @app.route('/apagar/<id>')
 def apagarTarefa(id):
+	##Recebe o identificador e remove da lista.
 	tarefas.remove(tarefas[int(id)])
+
+	#Redireciona para Home
 	return redirect('/')
 
 if __name__ == "__main__":
 	# Iniciando a aplicação.
-    app.run(host= '192.168.0.2')
+    app.run()
