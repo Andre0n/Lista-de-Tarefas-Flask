@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-É um projeto simples feito com HTML, CSS  [Python] usando o micro framework [Flask]. Aplicando os conceitos mais básicos de programação em Python.
+É um projeto simples feito com HTML, CSS e [Python] usando o micro framework [Flask]. Aplicando os conceitos mais básicos de programação em Python.
 
 ## Por quê?
 
