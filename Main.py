@@ -11,7 +11,7 @@ app = Flask(__name__)
 tarefas = []
 
 # Define a rota Inicial.
-@app.route('/')
+@app.route('/users')
 def mostraIndex():
 	# Renderiza a página Inicial.
 	return render_template("index.html", tarefas=tarefas)# -> Passando a Lista como parâmetro
