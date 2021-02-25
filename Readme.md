@@ -20,6 +20,7 @@ Além disso você precisa de um editor de Códigos como [Notepad++](https://note
 
 **Instalando o Flask**
 
+Aqui você pode optar por um ambiente virtual.
 ```
 $ pip install -U Flask
 ```
@@ -30,16 +31,19 @@ $ pip install -U Flask
 $ mkdir Lista de Tarefa
 $ cd Lista de Tarefa
 $ git clone https://github.com/Andre0n/Lista-de-Tarefas-Flask.git
-$ make
-$ make run
+
 ```
 
 ***Rodando***
 
 ```
-$ cd Lista de Tarefa
-$ py main.py
+$ cd Lista-de-Tarefas-Flask
+$ py -m flask run --no-debugger
 ```
+## TOOD
+- Otimizar a Classe tarefa para melhor acesso.
+- Melhorar o layout do bootstrap.
+- Criar tamplates para evitar repetição no HTML.
 
 
 [Python]: https://www.python.org/
