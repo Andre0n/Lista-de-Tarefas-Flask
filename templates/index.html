@@ -2,7 +2,7 @@
 <html>
 <head lang="pt-BR">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Lista de Tarefas </title>
 	<link rel="stylesheet" type="text/css" href="static/reset.css">
 	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
@@ -19,7 +19,7 @@
 		@media screen and (max-width: 600px) {
 			.conteudo { display: flex; flex-direction :column; }
 			.conteudo a{ margin-top: 10px; }
-		}	
+		}
 	</style>
 	<!-- Main -->
 	<main>
@@ -30,15 +30,15 @@
 			<a href="/cadastro" class="btn btn-success">
 				<i class="fas fa-plus-circle"></i>
 				Nova Tarefa
-			</a>	
+			</a>
 		</div>
 
 		<!-- Tarefas -->
 		{%for tarefa in tarefas %}
 		<div class="card text-center">
 		  <div class="card-body">
-		    <h5 class="card-title">{{tarefa.titulo}}</h5>
-		    <p class="card-text">{{tarefa.descricao}}</p>
+		    <h5 class="card-title">{{ tarefa.get_titulo() }}</h5>
+		    <p class="card-text">{{ tarefa.get_descricao() }}</p>
 		    <a href="/apagar/{{tarefas.index(tarefa)}}" class="btn btn-success">
 		    	Concluir Tarefa
 		    	<span class="ico">&#10003</span>
@@ -47,7 +47,7 @@
 		</div>
 		{%else%}
 			<div class="alert alert-danger" role="alert">
-			 	Não há Tarefas Cadastradas! 
+			 	Não há Tarefas Cadastradas!
 			</div>
 		{%endfor%}
 	</main>
